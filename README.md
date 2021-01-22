@@ -8,4 +8,4 @@ If you have any question please contact the authors of the publication Amy.maas@
 
 Please cite the manuscript if using this code, partially or in its totality. 
 
-Funded by NSF [OCE-1829318](https://img.shields.io/badge/NSF-1829318-blue.svg)(https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829318) and Simons Foundation International [BIOS-SCOPE](https://scope.bios.edu/)
+Funded by NSF  [![OCE-1829318](https://img.shields.io/badge/NSF-1829318-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829318) and Simons Foundation International [BIOS-SCOPE](https://scope.bios.edu/)
