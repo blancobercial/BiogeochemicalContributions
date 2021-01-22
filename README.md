@@ -1,4 +1,4 @@
-# BiogeochemicalContributions
+# Biogeochemical Contributions
 
 This is the repository for scripts and example data for the manuscript "Use of Optical Imaging Datasets to Assess Biogeochemical Contributions of the Mesozooplankton" by Maas, Gossner, Smith and Blanco-Bercial. 
 
