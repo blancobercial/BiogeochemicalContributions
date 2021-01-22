@@ -7,3 +7,5 @@ The data used for the publication is in the csv data. The R code should produce 
 If you have any question please contact the authors of the publication Amy.maas@bios.edu, Hannah.Gossner@bios.edu, Leocadio@bios.edu.
 
 Please cite the manuscript if using this code, partially or in its totality. 
+
+Funded by NSF [OCE-1829318](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829318)
