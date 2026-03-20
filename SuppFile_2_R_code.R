@@ -443,7 +443,7 @@ night<-night_bin_sub%>%group_by(net)%>%summarize(Tot_BV_m3=sum(NBV_m3),Tot_BM_m3
 DayNight<-data.frame("BV_Mig"=c(abs(day$Tot_BV_m2-night$Tot_BV_m2)), "BV_Res"=do.call(pmin,(as.data.frame(cbind(day$Tot_BV_m2,night$Tot_BV_m2)))),
                      "BM_Mig"=c(abs(day$Tot_BM_m2-night$Tot_BM_m2)), "BM_Res"=do.call(pmin,(as.data.frame(cbind(day$Tot_BM_m2,night$Tot_BM_m2)))),
                      "Ox_Mig"=c(abs(day$Tot_Ox_m2-night$Tot_Ox_m2)), "Ox_Res"=do.call(pmin,(as.data.frame(cbind(day$Tot_Ox_m2,night$Tot_Ox_m2)))),
-                     "CO2_Mig"=c(abs(day$Tot_CO2_m2-night$Tot_CO2_m2)),"CO2_Mig"=do.call(pmin,(as.data.frame(cbind(day$Tot_CO2_m2,night$Tot_CO2_m2)))),
+                     "CO2_Mig"=c(abs(day$Tot_CO2_m2-night$Tot_CO2_m2)),"CO2_Res"=do.call(pmin,(as.data.frame(cbind(day$Tot_CO2_m2,night$Tot_CO2_m2)))),
                      "BM_DVM"=c((day$Tot_BM_m2-night$Tot_BM_m2)),"BM_day"=c(day$Tot_BM_m2),"BM_night"=c(night$Tot_BM_m2),
                      "BV_DVM"=c((day$Tot_BV_m2-night$Tot_BV_m2)),
                      "Med_Depth"=as.factor(apply(as.data.frame(cbind(day$med_depth,night$med_depth)),1,FUN=mean)),
