@@ -188,11 +188,11 @@ sub2$temp<-as.numeric(as.character(with(lookup,Tlab[match(sub2$net,NetList)]))) 
 #sub2$O2_umol<-(exp(-0.339+(0.801*log(sub2$DW)))+0.069*(sub2$temp))/22.4 #applies an allometric equation for oxygen consumption in umol. Can be modified for species or taxonomic group
 ### The code below uses the Taxa factor to apply a taxonomic specific allometric oxygen consumption rate
 ###If the taxonomy is not explicitly listed is assumes the equation for a copepod
-sub2$O2_umol<-with(sub2, ifelse(Taxa %like% "Copepoda", ((exp(-0.399+(0.801*log(DW)))+0.069*(temp))/22.4),
-                                  ifelse(Taxa %like% "Chaetognatha", ((exp(-0.173+(0.805*log(DW)))+0.068*(temp))/22.4),
-                                         ifelse(Taxa %like% "Amphipoda", ((exp(0.407+(0.743*log(DW)))+0.037*(temp))/22.4),
-                                               ifelse(Taxa %like% "Euphausiacea",((exp(0.392+(0.753*log(DW)))+0.046*(temp))/22.4),                                                     ifelse(Taxa %in% "Mollusca",((exp(-0.56+(0.82*log(DW)))+0.046*(temp))/22.4),
-                                                            ((exp(-0.399+(0.801*log(DW)))+0.069*(temp))/22.4)))))))
+sub2$O2_umol<-with(sub2, ifelse(Taxa %like% "Copepoda", ((exp(-0.399+(0.801*log(DW))+0.069*(temp)))/22.4),
+                                  ifelse(Taxa %like% "Chaetognatha", ((exp(-0.173+(0.805*log(DW))+0.068*(temp)))/22.4),
+                                         ifelse(Taxa %like% "Amphipoda", ((exp(0.407+(0.743*log(DW))+0.037*(temp)))/22.4),
+                                               ifelse(Taxa %like% "Euphausiacea",((exp(0.392+(0.753*log(DW))+0.046*(temp)))/22.4),                                                     ifelse(Taxa %in% "Mollusca",((exp(-0.56+(0.82*log(DW)))+0.046*(temp))/22.4),
+                                                            ((exp(-0.399+(0.801*log(DW))+0.069*(temp)))/22.4)))))))
 #sub2$CO2<-(sub2$O2_umol)*0.87 #Converts between O2 and CO2 using a general RQ - RQ can be changed (see text)
 #### The code below uses the Taxa factor to apply a taxonomic specific RQ
 ###If the taxonomy is not explicitly listed is assumes the RQ for a copepod
